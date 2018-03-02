@@ -1,0 +1,516 @@
+ /******************************************************************
+
+Stylesheet: Retina Screens & Devices Stylesheet
+
+When handling retina screens you need to make adjustments, especially
+if you're not using font icons. Here you can add them in one neat
+place.
+
+******************************************************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+/* 
+
+EXAMPLE 
+Let's say you have an image and you need to make sure it looks ok
+on retina screens. Let's say we have an icon which dimension are
+24px x 24px. In your regular stylesheets, it would look something
+like this:
+
+.icon {
+	width: 24px;
+	height: 24px;
+	background: url(img/test.png) no-repeat;
+}
+
+For retina screens, we have to make some adjustments, so that image
+doesn't look blurry. So, taking into account the image above and the
+dimensions, this is what we would put in our retina stylesheet:
+
+.icon {
+	background: url(img/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+So, you would create the same icon, but at double the resolution, meaning 
+it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+(this is pretty standard practice). Set the background image so it matches
+the original dimensions and you are good to go. 
+
+*/
+
+}
+@media (max-width:1024px) {
+	.entry-content {
+		font-size: 1em;
+	}
+	#mobile-logo {
+		height: 40px;
+		padding: 0.1em 0;
+	}
+	.calendar-image {
+		width: calc(100% + 1em + 1em);
+		margin-left: -1em;
+		margin-right: -1em;
+		margin-top: -1.15em;
+		margin-bottom: 1em;
+	}
+	.category-singapore-schools, .category-school-profiles {
+		#inner-content {
+			.ss-slider {
+				width: calc(100% + 1em + 1em);
+				margin-left: -1em;
+				margin-right: -1em;
+				margin-top: -1em;
+				position: relative;
+				.orbit-slide {
+					img {
+						width: 100%;
+						height: auto;
+					}
+					.orbit-caption {
+						font-size: 0.9em;
+						padding: 0.9em;
+						.cat-icon {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.search-mobile {
+			.fa-search {
+				color: $purple;
+			}
+		}
+		.compare {
+			.compare-menu {
+				li {
+					display: block; 
+					a {
+						padding: .5em 1em;
+						display: block;
+					}
+				}
+			}
+			.flex-direction-nav {
+				display: none;
+			}
+		}
+	}
+	.category-pregnancyandbabies {
+		#inner-content {
+			.bumps-slider {
+				width: calc(100% + 1em + 1em);
+				margin-left: -1em;
+				margin-right: -1em;
+				margin-top: -1em;
+				position: relative;
+				.orbit-slide {
+					img {
+						width: 100%;
+						height: auto;
+					}
+					.orbit-caption {
+						font-size: 0.9em;
+						padding: 0.9em;
+						.cat-icon {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.search-mobile {
+			.fa-search {
+				color: $green;
+			}
+		}
+		.hk-widgets { 
+			margin-top: 0;
+			.honeykidsgo {
+				.css-img {
+					height: 146px;
+				}
+			}
+			.honeykids {
+				.css-img {
+					height: 120px;
+				}
+			}
+			.school-selector {
+				.css-img {
+					height: 120px;
+				}
+			}
+		}
+	}
+	.home {
+		.home-slider {
+			width: calc(100% + 1em + 1em);
+			margin-left: -1em;
+			margin-right: -1em;
+			margin-top: -1em;
+			position: relative;
+			.orbit-slide {
+				img {
+					width: 100%;
+					height: auto;
+				}
+				.orbit-caption {
+					font-size: 0.9em;
+					padding: 0.9em;
+					.cat-icon {
+						display: none;
+					}
+				}
+			}
+		}
+		.video {
+			.widescreen.flex-video {
+				margin-bottom: 0!important;
+				width: calc(100% + 2em);
+				margin-left: -1em;
+				margin-right: -1em;
+			}
+		}
+		.hk-widgets { 
+			margin-top: 0;
+		}
+	}
+	.sidebar {
+		.ad {
+			display: inline-block;
+			margin-left: 0.35em;
+			margin-right: 0.35em;
+			vertical-align: top;
+			min-height: 298px;
+		}
+	}
+	article {
+		.hero {
+			width: calc(100% + 1em + 1em);
+			margin-left: -1em;
+			margin-right: -1em;
+		}
+		.wp-caption {
+			p.wp-caption-text {
+				color: #777777;
+			}
+			img {
+				width: calc(100% + 1.25em + 1.25em);
+				margin-left: -1.25em;
+				margin-right: -1.25em;
+				max-width: none;
+			}
+		}
+	}
+	.archive, .page {
+		.sidebar {
+			.ad {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	.single-post {
+		.sidebar {
+			.ad {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				vertical-align: top;
+				min-height: 298px;
+			}
+			.editors-picks, .featured-events {
+				max-width: 356px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	.calendar {
+		h6.ridge {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.orbit {
+			width: calc(100% + 1em + 1em);
+			margin-left: -1em;
+			margin-right: -1em;
+			.orbit-container {
+				.orbit-slide {
+					.css-img {
+						height: 250px;
+					}
+				}
+			}
+			.orbit-next {
+				right: 0;
+			}
+			.orbit-previous {
+				left: 0;
+			}
+		}
+		.fa-angle-down {
+			display: none;
+		}
+	}
+	.pink-bar {
+		.socialbtns {
+			ul {
+				li {
+					.fa-angle-down {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	#name-display {
+		border: solid 1px $white;
+		padding: 0.25em 1em;
+	}
+}
+@media (max-width:640px) {
+	.footer {
+		#menu-footer-nav {
+			li {
+				display: block;
+			}
+		}
+		#inner-footer {
+			.middle-foot {
+				h4 {
+					padding: 5.5em 1em 1em 1em;
+				}
+				form {
+					margin-bottom: 2em;
+				}
+			}
+		}
+	}
+	.no-padding-left {
+		padding-left: 0.625em;
+	}
+	
+	.no-padding-right {
+		padding-right: 0.625em;
+	}
+	
+	.home {
+		.hk-widgets { 
+			margin-top: 0;
+			.honeykidsgo {
+				.css-img {
+					height: 250px;
+				}
+			}
+			.honeybumps {
+				.css-img {
+					height: 250px;
+				}
+			}
+			.school-selector {
+				.css-img {
+					height: 220px;
+				}
+			}
+		}
+		.editors-pick {
+			.dotted {
+				border-image-width: 5px;
+				article {
+					.thumb-title {
+						margin-bottom: 1em;
+						margin-top: 0.25em;
+					}
+				}
+				>.columns:last-child {
+					article {
+						.thumb-title {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+		.featured-events {
+			h5 {
+				text-align: center;
+				margin: 0.5em;
+			}
+			.orbit {
+				position: relative;
+				margin-top: 0.25em;
+				.orbit-container {
+					margin-bottom: 0;
+					height: 310px!important;
+					
+				}
+				.orbit-next, .orbit-previous {
+					top: 40%;
+    				transform: translateY(-40%);
+					.fa {
+						font-size: 2em;
+						color: $pink;
+					}
+				}
+			}
+		}
+		
+	}
+	.sidebar {
+		.ad, .join-us {
+			display: block;
+			margin: 0 auto 1.5em auto;
+			min-height: 0;
+		}
+	}
+	.latest {
+		.overlay-container {
+			width: calc(100% + 0.625em + 0.625em);
+			margin-left: -0.625em;
+			margin-right: -0.625em;
+		}
+	}
+	.featured-events {
+		width: calc(100% + 0.625em + 0.625em);
+		margin-left: -0.625em;
+		margin-right: -0.625em;
+	}
+	article {
+		.share-icons, .save-article {
+			padding-left: 0!important;
+			padding-right: 0!important;
+		}
+		.article-footer {
+			.author-content {
+				padding: 1em;
+				img {
+					margin-bottom: 1em;
+				}
+				h6 {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.archive {
+		.author-content {
+			padding: 1em;
+			img {
+				margin-bottom: 1em;
+			}
+			h6 {
+				text-align: center;
+			}
+		}
+		.overlay-container {
+			width: calc(100% + 0.625em + 0.625em);
+			margin-left: -0.625em;
+			margin-right: -0.625em;
+		}
+	}
+	.archive-list {
+		.css-img {
+			width: calc(100% + 30px);
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+	}
+	.calendar { 
+		.calendar-search-bar {
+			.column, columns {
+				margin-bottom: 1em;
+			}
+		}
+	}
+	.category-singapore-schools, .category-school-profiles {
+		.compare {
+			.compare-menu {
+				margin: 0 auto 1.5em auto;
+				li {
+					display: block;
+					a {
+						padding: .5em 1em;
+						display: block;
+						margin-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
+	.category-pregnancyandbabies {
+		.ages-stages {
+			h4 {
+				padding-top: 3em;
+			}
+			.ages-stages-menu {
+				.column-block {
+					text-align: center;
+					a {
+						height: auto;
+						display: block;
+					}
+				}
+			}
+		}
+		.hk-widgets { 
+			margin-top: 0;
+			.honeykidsgo {
+				.css-img {
+					height: 246px;
+				}
+			}
+			.honeykids {
+				.css-img {
+					height: 220px;
+				}
+			}
+			.school-selector {
+				.css-img {
+					height: 220px;
+				}
+			}
+		}
+	}
+	.user-photo {
+		text-align: center;
+		margin-bottom: 1.5em;
+	}
+	.user-desc {
+		text-align: center;
+	}
+	.instruction-box {
+		margin-top: 1em;
+	}
+	form.ajax-auth {
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin-left: 0;
+		.row {
+			max-height: 100vh;
+			overflow-y: scroll;
+		}
+	}
+	.mid_editorial_ad {
+		.left, .right {
+			width: 50%;
+		}
+		.right {
+			.title {
+				a {
+					font-weight: 700;
+					font-size: 1em;
+				}
+			}
+		}
+	}
+
+}
