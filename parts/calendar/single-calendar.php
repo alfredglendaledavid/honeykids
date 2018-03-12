@@ -6,7 +6,7 @@
 		<?php the_post_thumbnail('large'); ?>
     </div>
     
-	<h4><?php the_title(); ?></h4>
+	<h1 class="entry-title single-title"><?php the_title(); ?></h1>
     
     <div class="single-calendar-details">
 		<?php
